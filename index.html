@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="nedbetalingsplan.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="nedbetalingsplan.css"></link>
+  </head>
+  <body>
+    <div id="leggTil">
+      <div class="beskrivelse">
+        <h1>Nedbetalingsplan</h1>
+        <h2>
+          Legg inn informasjon om lånet ditt og se <br />
+          hvilken nedbetalingsplan du får.
+        </h2>
+      </div>
+      <div>
+        <form id="verdier">
+          Lånebeløp<br />
+          <input value="2000000" type="text" /><br />
+          Nominell Rente (%)<br />
+          <input value="3.00" type="text" /><br />
+          Termingebyr<br />
+          <input type="text" value="30" /><br />
+          Utløpsdato<br /><input
+            type="date"
+            value="2045-01-01"
+            placeholder="2045-01-01"
+          /><br />
+          Saldodato<br /><input
+            type="date"
+            value="2020-01-01"
+            placeholder="2020-01-01"
+          /><br />
+          Dato første innbetaling<br /><input
+            type="date"
+            value="2020-02-01"
+            placeholder="2020-02-01"
+          /><br />
+          <input
+            id="clickMe"
+            type="button"
+            value="Lag plan"
+            onclick="lagPlan()"
+          />
+        </form>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="canvases" id="niceCanvases">
+      <div class="chart"><canvas id="line-chart"></canvas></div>
+      <div class="chart"><canvas id="bar-chart"></canvas></div>
+    </div>
+    <br />
+    <br />
+    <table id="niceTable"></table>
+  </body>
+</html>
