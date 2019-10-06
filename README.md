@@ -2,4 +2,6 @@
 
 Har laget en nedbetalingsplan for lån i forbindelse med en oppgave som ble gitt av Stacc.
 API til Stacc er brukt. HTML, CSS og JS-filene må ligge i samme mappe for å kjøre. Åpne
-så index.html for å kjøre. 
+så index.html for å kjøre.
+
+Prosjektet er tilgjengelig på https://h134036.github.io/Kodeoppgave-Stacc/
